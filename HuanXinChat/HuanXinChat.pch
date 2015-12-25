@@ -1,0 +1,29 @@
+//
+//  HuanXinChat.pch
+//  HuanXinChat
+//
+//  Created by baijf on 12/24/15.
+//  Copyright © 2015 Junne. All rights reserved.
+//
+
+#ifndef HuanXinChat_pch
+#define HuanXinChat_pch
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* HuanXinChat_pch */
+
+#ifdef __OBJC__
+
+#import "EaseMob.h"
+#import "EaseUI.h"
+#import "ChatDemoUIDefine.h"
+#import "EMAlertView.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+DismissKeyboard.h"
+
+#endif
