@@ -426,6 +426,8 @@
 		F5E8A65C1C2CD1DF0030FA3E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E8A65B1C2CD1DF0030FA3E /* StoreKit.framework */; };
 		F5E8A65E1C2CD2050030FA3E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E8A65D1C2CD2050030FA3E /* Accounts.framework */; };
 		F5E8A6601C2CD20F0030FA3E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E8A65F1C2CD20F0030FA3E /* Social.framework */; };
+		F5E8A6651C2D0F0C0030FA3E /* callRing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5E8A6621C2D0F0C0030FA3E /* callRing.mp3 */; };
+		F5E8A6661C2D0F0C0030FA3E /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A6641C2D0F0C0030FA3E /* CallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1061,6 +1063,9 @@
 		F5E8A65B1C2CD1DF0030FA3E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		F5E8A65D1C2CD2050030FA3E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F5E8A65F1C2CD20F0030FA3E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F5E8A6621C2D0F0C0030FA3E /* callRing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = callRing.mp3; sourceTree = "<group>"; };
+		F5E8A6631C2D0F0C0030FA3E /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		F5E8A6641C2D0F0C0030FA3E /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1206,6 +1211,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E8A4621C2CCF890030FA3E /* ChatDemoUIDefine.h */,
+				F5E8A6611C2D0F0C0030FA3E /* Call */,
 				F5E8A6571C2CD1220030FA3E /* Profile */,
 				F5E8A64D1C2CD0FF0030FA3E /* Chatroom */,
 				F5E8A62E1C2CD0E80030FA3E /* ChatGroup */,
@@ -2494,6 +2500,16 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		F5E8A6611C2D0F0C0030FA3E /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8A6621C2D0F0C0030FA3E /* callRing.mp3 */,
+				F5E8A6631C2D0F0C0030FA3E /* CallViewController.h */,
+				F5E8A6641C2D0F0C0030FA3E /* CallViewController.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2742,6 +2758,7 @@
 				F5E8A5561C2CCFA90030FA3E /* VoiceSearchFeedback007@2x.png in Resources */,
 				F5E8A5541C2CCFA90030FA3E /* VoiceSearchFeedback006@2x.png in Resources */,
 				F5E8A5EF1C2CCFA90030FA3E /* tabbarSelectBg@2x.png in Resources */,
+				F5E8A6651C2D0F0C0030FA3E /* callRing.mp3 in Resources */,
 				F5E8A5681C2CCFA90030FA3E /* VoiceSearchFeedback016@2x.png in Resources */,
 				F5E8A59E1C2CCFA90030FA3E /* chatBar_record@2x.png in Resources */,
 				F5E8A5C31C2CCFA90030FA3E /* chat_receiver_bg.png in Resources */,
@@ -2951,6 +2968,7 @@
 				F5E8A6431C2CD0E80030FA3E /* ChatGroupDetailViewController.m in Sources */,
 				F544AFA91C2BD17900123898 /* MWTapDetectingView.m in Sources */,
 				F544AF8C1C2BD17900123898 /* EMCDDeviceManager+Media.m in Sources */,
+				F5E8A6661C2D0F0C0030FA3E /* CallViewController.m in Sources */,
 				F5E8A62C1C2CD0D80030FA3E /* RobotListViewController.m in Sources */,
 				F544AFAA1C2BD17900123898 /* MWZoomingScrollView.m in Sources */,
 				F544AF8B1C2BD17900123898 /* EMAudioRecorderUtil.m in Sources */,

@@ -19,6 +19,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 - (IBAction)loginAction:(id)sender {
     
     [[EaseMob sharedInstance].chatManager asyncLoginWithUsername:@"52111111" password:@"123456" completion:^(NSDictionary *loginInfo, EMError *error) {
@@ -26,6 +30,7 @@
         if (loginInfo && !error) {
             [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@YES];
             NSLog(@"登录成功");
+
             [self performSegueWithIdentifier:@"Main" sender:nil];
         }
     } onQueue:nil];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yea-Ys-iVP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JJF-ko-gff">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IM-LO-LX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="454"/>
+            <point key="canvasLocation" x="1619" y="454"/>
         </scene>
         <!--Conversation List Controller-->
         <scene sceneID="XOh-kG-x3C">
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tao-qg-T58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619" y="-207"/>
+            <point key="canvasLocation" x="2431" y="-207"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="SQD-ah-DVV">
@@ -55,7 +55,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RTl-Fe-9ml">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RTl-Fe-9ml">
                                 <rect key="frame" x="201" y="146" width="198" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="198" id="jqJ-om-aJj"/>
@@ -64,7 +64,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOw-f7-eFc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOw-f7-eFc">
                                 <rect key="frame" x="201" y="197" width="198" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="198" id="IQl-ZI-vyA"/>
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x32-pd-yQo">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x32-pd-yQo">
                                 <rect key="frame" x="201" y="256" width="198" height="30"/>
                                 <color key="backgroundColor" red="0.05213311264" green="0.32050800029999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -98,18 +98,20 @@
                             <constraint firstItem="RTl-Fe-9ml" firstAttribute="centerX" secondItem="OHW-gJ-RR3" secondAttribute="centerX" id="qGH-Gs-AyM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="A9d-cx-sNN"/>
                     <connections>
-                        <segue destination="QKd-ig-CqZ" kind="show" identifier="Main" id="Oep-XL-LzM"/>
+                        <segue destination="QKd-ig-CqZ" kind="push" identifier="Main" id="Oep-XL-LzM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzo-yu-x0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1564" y="145"/>
+            <point key="canvasLocation" x="-752" y="145"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JSg-Sb-59R">
             <objects>
                 <tabBarController id="QKd-ig-CqZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lJt-du-vSt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="VcB-uo-uh0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -123,7 +125,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnH-ly-4km" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="124"/>
+            <point key="canvasLocation" x="-13" y="124"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="9zl-uD-vOC">
@@ -142,7 +144,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkw-6Z-XBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="-215"/>
+            <point key="canvasLocation" x="1612" y="-215"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6RP-o3-REY">
@@ -178,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZtC-KX-4RO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="-458"/>
+            <point key="canvasLocation" x="1539" y="-458"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="7C7-oi-ues">
@@ -197,7 +199,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4q-FC-xNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5" y="454"/>
+            <point key="canvasLocation" x="807" y="454"/>
         </scene>
         <!--Item-->
         <scene sceneID="XGD-aC-pbB">
@@ -216,7 +218,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6Y-Lp-jHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85" y="-458"/>
+            <point key="canvasLocation" x="727" y="-458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BeY-Ib-3hK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JJF-ko-gff" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Gj-a5-ysd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yea-Ys-iVP" kind="relationship" relationship="rootViewController" id="lA3-6F-Gg8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgn-Ki-6lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1564" y="145"/>
         </scene>
     </scenes>
 </document>

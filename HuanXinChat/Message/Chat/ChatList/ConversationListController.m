@@ -54,11 +54,11 @@
     self.showRefreshHeader = YES;
     self.delegate = self;
     self.dataSource = self;
-    
+    self.title = @"消息";
     [self tableViewDidTriggerHeaderRefresh];
     
-    [self.view addSubview:self.searchBar];
-    self.tableView.frame = CGRectMake(0, self.searchBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.searchBar.frame.size.height);
+//    [self.view addSubview:self.searchBar];
+    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.searchBar.frame.size.height);
     [self networkStateView];
     
     [self searchController];
