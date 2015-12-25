@@ -30,11 +30,32 @@
         if (loginInfo && !error) {
             [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@YES];
             NSLog(@"登录成功");
+            [[EaseMob sharedInstance].chatManager setIsAutoLoginEnabled:NO];
+            
+            // 旧数据转换 (如果您的sdk是由2.1.2版本升级过来的，需要家这句话)
+//            [[EaseMob sharedInstance].chatManager importDataToNewDatabase];
+//            //获取数据库中数据
+//            [[EaseMob sharedInstance].chatManager loadDataFromDatabase];
+//            
+//            //获取群组列表
+//            [[EaseMob sharedInstance].chatManager asyncFetchMyGroupsList];
+            [self saveLastLoginUsername];
+
 
             [self performSegueWithIdentifier:@"Main" sender:nil];
         }
     } onQueue:nil];
     
+}
+
+- (void)saveLastLoginUsername
+{
+    NSString *username = [[[EaseMob sharedInstance].chatManager loginInfo] objectForKey:kSDKUsername];
+    if (username && username.length > 0) {
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        [ud setObject:username forKey:[NSString stringWithFormat:@"em_lastLogin_%@",kSDKUsername]];
+        [ud synchronize];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
