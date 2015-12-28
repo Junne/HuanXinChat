@@ -288,6 +288,7 @@
             else{
                 [_groupController reloadDataSource];
             }
+            _groupController.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:_groupController animated:YES];
         }
         else if (row == 2)

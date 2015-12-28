@@ -50,41 +50,54 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.dataArray count];
+    return section == 0 ? 2 : [self.dataArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = [EaseConversationCell cellIdentifierWithModel:nil];
-    EaseConversationCell *cell = (EaseConversationCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    // Configure the cell...
-    if (cell == nil) {
-        cell = [[EaseConversationCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    id<IConversationModel> model = [self.dataArray objectAtIndex:indexPath.row];
-    cell.model = model;
-    
-    if (_dataSource && [_dataSource respondsToSelector:@selector(conversationListViewController:latestMessageTitleForConversationModel:)]) {
-        cell.detailLabel.text = [_dataSource conversationListViewController:self latestMessageTitleForConversationModel:model];
+    if (indexPath.section == 0) {
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        }
+        cell.textLabel.text = indexPath.row == 0 ? @"CustomOne" : @"CustomTwo";
+        return cell;
+        
     } else {
-        cell.detailLabel.text = [self _latestMessageTitleForConversationModel:model];
+        
+        NSString *CellIdentifier = [EaseConversationCell cellIdentifierWithModel:nil];
+        EaseConversationCell *cell = (EaseConversationCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        // Configure the cell...
+        if (cell == nil) {
+            cell = [[EaseConversationCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        
+        id<IConversationModel> model = [self.dataArray objectAtIndex:indexPath.row];
+        cell.model = model;
+        
+        if (_dataSource && [_dataSource respondsToSelector:@selector(conversationListViewController:latestMessageTitleForConversationModel:)]) {
+            cell.detailLabel.text = [_dataSource conversationListViewController:self latestMessageTitleForConversationModel:model];
+        } else {
+            cell.detailLabel.text = [self _latestMessageTitleForConversationModel:model];
+        }
+        
+        if (_dataSource && [_dataSource respondsToSelector:@selector(conversationListViewController:latestMessageTimeForConversationModel:)]) {
+            cell.timeLabel.text = [_dataSource conversationListViewController:self latestMessageTimeForConversationModel:model];
+        } else {
+            cell.timeLabel.text = [self _latestMessageTimeForConversationModel:model];
+        }
+        
+        return cell;
     }
-    
-    if (_dataSource && [_dataSource respondsToSelector:@selector(conversationListViewController:latestMessageTimeForConversationModel:)]) {
-        cell.timeLabel.text = [_dataSource conversationListViewController:self latestMessageTimeForConversationModel:model];
-    } else {
-        cell.timeLabel.text = [self _latestMessageTimeForConversationModel:model];
-    }
-    
-    return cell;
+
 }
 
 #pragma mark - Table view delegate
@@ -98,9 +111,13 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (_delegate && [_delegate respondsToSelector:@selector(conversationListViewController:didSelectConversationModel:)]) {
-        EaseConversationModel *model = [self.dataArray objectAtIndex:indexPath.row];
-        [_delegate conversationListViewController:self didSelectConversationModel:model];
+    if (indexPath.section == 0) {
+        
+    } else {
+        if (_delegate && [_delegate respondsToSelector:@selector(conversationListViewController:didSelectConversationModel:)]) {
+            EaseConversationModel *model = [self.dataArray objectAtIndex:indexPath.row];
+            [_delegate conversationListViewController:self didSelectConversationModel:model];
+        }
     }
 }
 

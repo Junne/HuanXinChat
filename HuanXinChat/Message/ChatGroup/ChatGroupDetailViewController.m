@@ -607,8 +607,8 @@
                                                                     isIgnore:_chatGroup.isPushNotificationEnabled];
     
     return;
-    UIViewController *viewController = [[UIViewController alloc] init];
-    [self.navigationController pushViewController:viewController animated:YES];
+//    UIViewController *viewController = [[UIViewController alloc] init];
+//    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 //退出群组
