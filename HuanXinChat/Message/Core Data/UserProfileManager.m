@@ -252,7 +252,7 @@ static UserProfileManager *sharedInstance = nil;
         }
         return;
     }
-    [self loadUserProfileInBackground:usernames saveToLoacal:save completion:completion];
+//    [self loadUserProfileInBackground:usernames saveToLoacal:save completion:completion];
 }
 
 - (void)loadUserProfileInBackground:(NSArray*)usernames
