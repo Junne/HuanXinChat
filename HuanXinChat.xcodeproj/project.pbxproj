@@ -95,7 +95,7 @@
 		F544AFCD1C2BD17900123898 /* EaseUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF271C2BD17900123898 /* EaseUserModel.m */; };
 		F544AFCE1C2BD17900123898 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF301C2BD17900123898 /* NSDate+Category.m */; };
 		F544AFCF1C2BD17900123898 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF321C2BD17900123898 /* NSDateFormatter+Category.m */; };
-		F544AFD01C2BD17900123898 /* NSObject+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF341C2BD17900123898 /* NSObject+EaseMob.m */; };
+		F544AFD01C2BD17900123898 /* NSObject+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF341C2BD17900123898 /* NSObject+EaseMob.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		F544AFD11C2BD17900123898 /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF361C2BD17900123898 /* NSString+Valid.m */; };
 		F544AFD21C2BD17900123898 /* UIViewController+DismissKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF381C2BD17900123898 /* UIViewController+DismissKeyboard.m */; };
 		F544AFD31C2BD17900123898 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF3A1C2BD17900123898 /* UIViewController+HUD.m */; };
@@ -123,7 +123,7 @@
 		F544AFE91C2BD17900123898 /* EaseBubbleView+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF6D1C2BD17900123898 /* EaseBubbleView+Video.m */; };
 		F544AFEA1C2BD17900123898 /* EaseBubbleView+Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF6F1C2BD17900123898 /* EaseBubbleView+Voice.m */; };
 		F544AFEB1C2BD17900123898 /* EaseBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF711C2BD17900123898 /* EaseBubbleView.m */; };
-		F544AFEC1C2BD17900123898 /* EaseChatToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF741C2BD17900123898 /* EaseChatToolbar.m */; };
+		F544AFEC1C2BD17900123898 /* EaseChatToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF741C2BD17900123898 /* EaseChatToolbar.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		F544AFED1C2BD17900123898 /* EaseChatToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF761C2BD17900123898 /* EaseChatToolbarItem.m */; };
 		F544AFEE1C2BD17900123898 /* EaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF781C2BD17900123898 /* EaseImageView.m */; };
 		F544AFEF1C2BD17900123898 /* EaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F544AF7A1C2BD17900123898 /* EaseTextView.m */; };
@@ -189,6 +189,7 @@
 		F544B0651C2BD19600123898 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F544B02E1C2BD19600123898 /* user@2x.png */; };
 		F544B0671C2BD1A700123898 /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F544B0661C2BD1A700123898 /* EaseUIResource.bundle */; };
 		F544B06A1C2BDDE800123898 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F544B0691C2BDDE800123898 /* LoginViewController.m */; };
+		F55BD1E01C3288C600A8BDE8 /* EMBubbleView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = F55BD1DF1C3288C600A8BDE8 /* EMBubbleView+Gif.m */; };
 		F5E8A43A1C2CCF270030FA3E /* EMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A4051C2CCF270030FA3E /* EMAlertView.m */; };
 		F5E8A43B1C2CCF270030FA3E /* EMGifImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A4091C2CCF270030FA3E /* EMGifImage.m */; };
 		F5E8A43E1C2CCF270030FA3E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E8A4171C2CCF270030FA3E /* Bolts.framework */; };
@@ -288,7 +289,6 @@
 		F5E8A5FC1C2CCFCC0030FA3E /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A5F31C2CCFCC0030FA3E /* ConversationListController.m */; };
 		F5E8A5FD1C2CCFCC0030FA3E /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A5F61C2CCFCC0030FA3E /* ChatViewController.m */; };
 		F5E8A5FE1C2CCFCC0030FA3E /* CustomMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A5F91C2CCFCC0030FA3E /* CustomMessageCell.m */; };
-		F5E8A5FF1C2CCFCC0030FA3E /* EMBubbleView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A5FB1C2CCFCC0030FA3E /* EMBubbleView+Gif.m */; };
 		F5E8A6101C2CCFD80030FA3E /* ContactListSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A6021C2CCFD80030FA3E /* ContactListSelectViewController.m */; };
 		F5E8A6111C2CCFD80030FA3E /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A6041C2CCFD80030FA3E /* ContactListViewController.m */; };
 		F5E8A6161C2CCFD80030FA3E /* RealtimeSearchUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8A60F1C2CCFD80030FA3E /* RealtimeSearchUtil.m */; };
@@ -658,6 +658,8 @@
 		F544B0681C2BDDE800123898 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F544B0691C2BDDE800123898 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F55BD1DD1C32625300A8BDE8 /* NSDate+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		F55BD1DE1C3288C600A8BDE8 /* EMBubbleView+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMBubbleView+Gif.h"; sourceTree = "<group>"; };
+		F55BD1DF1C3288C600A8BDE8 /* EMBubbleView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMBubbleView+Gif.m"; sourceTree = "<group>"; };
 		F5E8A4041C2CCF270030FA3E /* EMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAlertView.h; sourceTree = "<group>"; };
 		F5E8A4051C2CCF270030FA3E /* EMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAlertView.m; sourceTree = "<group>"; };
 		F5E8A4081C2CCF270030FA3E /* EMGifImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGifImage.h; sourceTree = "<group>"; };
@@ -782,8 +784,6 @@
 		F5E8A5F61C2CCFCC0030FA3E /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		F5E8A5F81C2CCFCC0030FA3E /* CustomMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMessageCell.h; sourceTree = "<group>"; };
 		F5E8A5F91C2CCFCC0030FA3E /* CustomMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMessageCell.m; sourceTree = "<group>"; };
-		F5E8A5FA1C2CCFCC0030FA3E /* EMBubbleView+Gif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMBubbleView+Gif.h"; sourceTree = "<group>"; };
-		F5E8A5FB1C2CCFCC0030FA3E /* EMBubbleView+Gif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMBubbleView+Gif.m"; sourceTree = "<group>"; };
 		F5E8A6011C2CCFD80030FA3E /* ContactListSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListSelectViewController.h; sourceTree = "<group>"; };
 		F5E8A6021C2CCFD80030FA3E /* ContactListSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListSelectViewController.m; sourceTree = "<group>"; };
 		F5E8A6031C2CCFD80030FA3E /* ContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListViewController.h; sourceTree = "<group>"; };
@@ -2000,10 +2000,10 @@
 		F5E8A5F71C2CCFCC0030FA3E /* CustomizableCell */ = {
 			isa = PBXGroup;
 			children = (
+				F55BD1DE1C3288C600A8BDE8 /* EMBubbleView+Gif.h */,
+				F55BD1DF1C3288C600A8BDE8 /* EMBubbleView+Gif.m */,
 				F5E8A5F81C2CCFCC0030FA3E /* CustomMessageCell.h */,
 				F5E8A5F91C2CCFCC0030FA3E /* CustomMessageCell.m */,
-				F5E8A5FA1C2CCFCC0030FA3E /* EMBubbleView+Gif.h */,
-				F5E8A5FB1C2CCFCC0030FA3E /* EMBubbleView+Gif.m */,
 			);
 			path = CustomizableCell;
 			sourceTree = "<group>";
@@ -2500,7 +2500,6 @@
 				F5E8A62D1C2CD0D80030FA3E /* RobotManager.m in Sources */,
 				F544AFA61C2BD17900123898 /* MWPhoto.m in Sources */,
 				F5E8A4801C2CCF9C0030FA3E /* XHMessageTextView.m in Sources */,
-				F5E8A5FF1C2CCFCC0030FA3E /* EMBubbleView+Gif.m in Sources */,
 				F5E8A6291C2CD0D80030FA3E /* EMRobotChatTextBubbleView.m in Sources */,
 				F544AFAE1C2BD17900123898 /* EMSDWebImageDecoder.m in Sources */,
 				F544AFB11C2BD17900123898 /* EMSDWebImageManager.m in Sources */,
@@ -2546,6 +2545,7 @@
 				F544AFE81C2BD17900123898 /* EaseBubbleView+Text.m in Sources */,
 				F544AFC21C2BD17900123898 /* PSTCollectionViewItemKey.m in Sources */,
 				F544AF9A1C2BD17900123898 /* MJRefreshFooter.m in Sources */,
+				F55BD1E01C3288C600A8BDE8 /* EMBubbleView+Gif.m in Sources */,
 				F5E8A4431C2CCF270030FA3E /* SRSlimeView.m in Sources */,
 				F5E8A6161C2CCFD80030FA3E /* RealtimeSearchUtil.m in Sources */,
 				F544AF9F1C2BD17900123898 /* MJRefreshLegendHeader.m in Sources */,

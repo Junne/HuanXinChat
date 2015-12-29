@@ -100,7 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="A9d-cx-sNN"/>
                     <connections>
-                        <segue destination="QKd-ig-CqZ" kind="push" identifier="Main" id="Oep-XL-LzM"/>
+                        <segue destination="QKd-ig-CqZ" kind="show" identifier="Main" id="Oep-XL-LzM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzo-yu-x0P" userLabel="First Responder" sceneMemberID="firstResponder"/>

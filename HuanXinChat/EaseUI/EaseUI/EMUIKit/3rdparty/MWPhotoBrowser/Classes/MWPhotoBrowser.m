@@ -563,9 +563,14 @@
     return YES;
 }
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmismatched-return-types"
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
 }
+#pragma GCC diagnostic pop
+
+
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     

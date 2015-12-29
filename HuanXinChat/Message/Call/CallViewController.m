@@ -490,7 +490,10 @@ void YUV420spRotate90(UInt8 *  dst, UInt8* src, size_t srcWidth, size_t srcHeigh
     //旋转Y
     int k = 0;
     for(int i = 0; i < srcWidth; i++) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wshorten-64-to-32"
         int nPos = wh-srcWidth;
+#pragma clang diagnostic pop
         for(int j = 0; j < srcHeight; j++) {
             dst[k] = src[nPos + i];
             k++;
@@ -498,7 +501,10 @@ void YUV420spRotate90(UInt8 *  dst, UInt8* src, size_t srcWidth, size_t srcHeigh
         }
     }
     for(int i = 0; i < uvWidth; i++) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wshorten-64-to-32"
         int nPos = wh+uvwh-uvWidth;
+#pragma clang diagnostic pop
         for(int j = 0; j < uvHeight; j++) {
             dst[k] = src[nPos + i];
             dst[k+uvwh] = src[nPos + i+uvwh];
@@ -557,7 +563,11 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         }
         
         YUV420spRotate90(bufferPtr, _imageDataBuffer, width, height);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wshorten-64-to-32"
         [[EaseMob sharedInstance].callManager processPreviewData:(char *)bufferPtr width:width height:height];
+#pragma clang diagnostic pop
+
         
         /*We unlock the buffer*/
         CVPixelBufferUnlockBaseAddress(imageBuffer, 0);

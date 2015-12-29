@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuanXinChat/Message/Call/CallViewController.m"
-            timestampString = "473062733.715238"
+            timestampString = "473074573.326091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "662"
-            endingLineNumber = "662"
+            startingLineNumber = "672"
+            endingLineNumber = "672"
             landmarkName = "-silenceAction"
             landmarkType = "5">
          </BreakpointContent>
