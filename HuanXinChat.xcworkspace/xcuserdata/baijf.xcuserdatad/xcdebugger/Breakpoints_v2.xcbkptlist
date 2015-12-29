@@ -27,6 +27,38 @@
             endingLineNumber = "264"
             landmarkName = "-loadUserProfileInBackground:saveToLoacal:completion:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UserProfileManager loadUserProfileInBackground:saveToLoacal:completion:]"
+                  moduleName = "HuanXinChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baijf/Desktop/NewTuBaWaiQin/HuanXinChat/HuanXinChat/Message/Core%20Data/UserProfileManager.m"
+                  timestampString = "473076093.962098"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "264"
+                  endingLineNumber = "264"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__74-[UserProfileManager loadUserProfileInBackground:saveToLoacal:completion:]_block_invoke"
+                  moduleName = "HuanXinChat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/baijf/Desktop/NewTuBaWaiQin/HuanXinChat/HuanXinChat/Message/Core%20Data/UserProfileManager.m"
+                  timestampString = "473076093.962651"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "264"
+                  endingLineNumber = "264"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
